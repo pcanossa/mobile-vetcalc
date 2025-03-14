@@ -1,0 +1,7 @@
+{
+  "name": "Vetcalc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

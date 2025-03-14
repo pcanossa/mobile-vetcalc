@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true">
+  <div class="cab">
+    <h1>
+      VETCALC <i class="fa-solid fa-paw"></i>
+    </h1>
+  </div>
+  <div class="settings">
+    <h6>INFORMAÇOES DE DOSAGEM</h6>
+    <div class="input">
+      <ion-input color="medium" placeholder="Peso do Animal" type="number" labelPlacement="floating" [(ngModel)]="peso">
+        <div class="inputs" slot="label"><ion-text color="primary">Peso</ion-text></div>
+      </ion-input>
+    </div>
+    <div class="input">
+      <ion-input placeholder="Dosagem p/ Kg" type="number" labelPlacement="floating" [(ngModel)]="dosagem">
+        <div class="inputs" slot="label"><ion-text color="primary">Dosagem</ion-text></div>
+      </ion-input>
+    </div>
+    <div class="input">
+      <ion-input placeholder="Concentração da medicação" type="number" labelPlacement="floating" [(ngModel)]="concentracao">
+        <div class="inputs" slot="label"><ion-text color="primary">Concentração</ion-text></div>
+      </ion-input>
+    </div>
+    <div class="apresentacao">
+      <h6>FORMA DE APRESENTAÇÃO</h6>
+      <ion-select label="Apresentação" label-placement="floating" fill="solid" aria-label="apresentacao" color="primary" [(ngModel)]="apresentacao">
+        <ion-select-option value="liquido">Líquido/ Injetável</ion-select-option>
+        <ion-select-option value="comprimido">Comprimido</ion-select-option>
+        <ion-select-option value="gotas">Gotas</ion-select-option>
+      </ion-select>
+      <ion-list *ngIf="apresentacao != 'comprimido'">
+        <ion-radio-group [(ngModel)]="tipoApresentacao">
+          <ion-item>
+            <ion-radio value="mgml">mg/ml</ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="concentracao">concentração %</ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </div>
+  </div>
+  <div class="btncalc">
+    <button (click)="calculaDosagemFinal()">
+      <i class="fa-solid fa-calculator"></i>
+        CALCULAR
+    </button>
+  </div>
+  <div class="resultado" *ngIf="resultado != null">
+    <p *ngIf="poso != null">A dosagem para o paciente é de {{poso}}mg.</p><p> {{resultado}}</p>
+  </div>
+</ion-content>
