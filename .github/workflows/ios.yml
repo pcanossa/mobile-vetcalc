@@ -1,11 +1,3 @@
-name: iOS starter workflow
-
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
 name: Build iOS App
 
 on:
