@@ -9,23 +9,23 @@ O  aplicativo permite o cálculo de doses das seguikntes **apresentações de me
 >- Gotas (unidades)
 >- Comprimidos (inteiros ou partições)
 
-(https://i.ibb.co/wFF7X3FY/Captura-de-tela-2025-03-14-100521.png)
+![Imgem de aplicativo em android](https://i.ibb.co/wFF7X3FY/Captura-de-tela-2025-03-14-100521.png)
 
-(https://i.ibb.co/8nyhS7c1/Captura-de-tela-2025-03-14-100619.png)
+![Imgem de aplicativo em android](https://i.ibb.co/8nyhS7c1/Captura-de-tela-2025-03-14-100619.png)
 
-(https://i.ibb.co/CK0LM8f4/Captura-de-tela-2025-03-14-100651.png)
+![Imgem de aplicativo em android](https://i.ibb.co/CK0LM8f4/Captura-de-tela-2025-03-14-100651.png)
 
-(https://i.ibb.co/pjg0R9R4/Captura-de-tela-2025-03-14-100708.png)
+![Imgem de aplicativo em android](https://i.ibb.co/pjg0R9R4/Captura-de-tela-2025-03-14-100708.png)
 
-(https://i.ibb.co/607bjR59/Captura-de-tela-2025-03-14-100734.png)
+![Imgem de aplicativo em android](https://i.ibb.co/607bjR59/Captura-de-tela-2025-03-14-100734.png)
 
-(https://i.ibb.co/fdXbMGLY/Captura-de-tela-2025-03-14-100814.png)
+![Imgem de aplicativo em android](https://i.ibb.co/fdXbMGLY/Captura-de-tela-2025-03-14-100814.png)
 
-(https://i.ibb.co/FLprZWJV/Captura-de-tela-2025-03-14-100841.png)
+![Imgem de aplicativo em android](https://i.ibb.co/FLprZWJV/Captura-de-tela-2025-03-14-100841.png)
 
-(https://i.ibb.co/r2JTnShn/Captura-de-tela-2025-03-14-100901.png)
+![Imgem de aplicativo em android](https://i.ibb.co/r2JTnShn/Captura-de-tela-2025-03-14-100901.png)
 
-(https://i.ibb.co/SDdFrRgt/Captura-de-tela-2025-03-14-100933.png)
+![Imgem de aplicativo em android](https://i.ibb.co/SDdFrRgt/Captura-de-tela-2025-03-14-100933.png)
 
 
 ## 1. DOWNLOAD DO APLICATIVO
