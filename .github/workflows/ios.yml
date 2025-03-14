@@ -16,10 +16,13 @@ jobs:
       - name: Install Node.js (>=20.0.0)
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'   # Garantindo que o Node.js >=20.0.0 seja instalado
+          node-version: '20.x'
 
       - name: Install dependencies
         run: npm install
+
+      - name: Build web assets
+        run: npm run build    # Gerar os arquivos web na pasta www
 
       - name: Install Capacitor & CocoaPods
         run: npm install -g @capacitor/cli && npx cap sync ios
