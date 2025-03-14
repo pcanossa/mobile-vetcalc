@@ -22,13 +22,16 @@ jobs:
         run: npm install
 
       - name: Build web assets
-        run: npm run build    # Gerar os arquivos web na pasta www
+        run: npm run build
 
       - name: Install Capacitor & CocoaPods
         run: npm install -g @capacitor/cli && npx cap sync ios
 
-      - name: Build iOS App
+      - name: Install Fastlane
         run: |
-          cd ios/App
-          pod install
-          xcodebuild -workspace App.xcworkspace -scheme App -sdk iphoneos -configuration Release archive -archivePath App.xcarchive
+          gem install fastlane
+
+      - name: Build iOS App using Fastlane
+        run: |
+          cd ios
+          fastlane beta   # Ou fastlane ios build se tiver uma lane configurada
