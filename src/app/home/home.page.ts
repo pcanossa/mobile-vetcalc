@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AdMob, AdOptions, BannerAdOptions, BannerAdPosition, BannerAdSize } from '@capacitor-community/admob';
 
 @Component({
   selector: 'app-home',
@@ -118,6 +119,22 @@ export class HomePage {
 
       `
     )
+  }
+
+  async showBannerAd() {
+    const options: BannerAdOptions = {
+    adId: 'ca-app-pub-8277516820087653~5667417118', // Mantenha o seu Ad Unit ID de Banner
+    adSize: BannerAdSize.ADAPTIVE_BANNER,
+    position: BannerAdPosition.BOTTOM_CENTER,
+    margin: 0,
+    isTesting: true,
+  };
+
+    await AdMob.showBanner(options);
+  }
+
+  async hideBannerAd() {
+    await AdMob.hideBanner();
   }
 
 }
