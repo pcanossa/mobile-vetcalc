@@ -11,6 +11,11 @@ export class HomePage {
 
   constructor() {}
 
+  ionViewDidEnter() {
+    console.log("A página entrou na tela, chamando o banner...");
+    this.showBannerAd();
+  }
+
   peso : any;
   dosagem : any;
   concentracao: any;
@@ -122,8 +127,9 @@ export class HomePage {
   }
 
   async showBannerAd() {
+    console.log("Tentando mostrar o banner...");
     const options: BannerAdOptions = {
-    adId: 'ca-app-pub-8277516820087653~5667417118', // Mantenha o seu Ad Unit ID de Banner
+    adId: 'ca-app-pub-3940256099942544/6300978111', // Mantenha o seu Ad Unit ID de Banner
     adSize: BannerAdSize.ADAPTIVE_BANNER,
     position: BannerAdPosition.BOTTOM_CENTER,
     margin: 0,
@@ -131,10 +137,12 @@ export class HomePage {
   };
 
     await AdMob.showBanner(options);
+    console.log("Comando AdMob.showBanner foi executado.");
   }
 
   async hideBannerAd() {
     await AdMob.hideBanner();
+
   }
 
 }
