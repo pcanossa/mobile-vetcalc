@@ -3,6 +3,9 @@
     "@ionic/angular/common",
     "@ionic/angular/standalone"
   ],
+   "java.project.exclusion": [
+    "**/node_modules/**"
+  ],
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "java.configuration.updateBuildConfiguration": "interactive"
 }
