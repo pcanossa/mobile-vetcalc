@@ -7,17 +7,17 @@
   <div class="settings">
     <h6>INFORMAÇOES DE DOSAGEM</h6>
     <div class="input">
-      <ion-input color="medium" placeholder="Peso do Animal" type="number" labelPlacement="floating" [(ngModel)]="peso">
+      <ion-input color="medium" placeholder="Peso do Animal" type="number" labelPlacement="floating" [(ngModel)]="peso" required="" (click)="showBannerAd();">
         <div class="inputs" slot="label"><ion-text color="primary">Peso</ion-text></div>
       </ion-input>
     </div>
     <div class="input">
-      <ion-input placeholder="Dosagem mg/kg" type="number" labelPlacement="floating" [(ngModel)]="dosagem">
+      <ion-input placeholder="Dosagem mg/kg" type="number" labelPlacement="floating" [(ngModel)]="dosagem" required="">
         <div class="inputs" slot="label"><ion-text color="primary">Dosagem</ion-text></div>
       </ion-input>
     </div>
     <div class="input">
-      <ion-input placeholder="Concentração da medicação" type="number" labelPlacement="floating" [(ngModel)]="concentracao">
+      <ion-input placeholder="Concentração da medicação" type="number" labelPlacement="floating" [(ngModel)]="concentracao" required="">
         <div class="inputs" slot="label"><ion-text color="primary">Concentração</ion-text></div>
       </ion-input>
     </div>
