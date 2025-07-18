@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package br.vetcalc.app;
 
 import com.getcapacitor.BridgeActivity;
 
