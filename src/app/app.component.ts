@@ -25,9 +25,7 @@ export class AppComponent {
     // Inicializa o AdMob
     AdMob.initialize({
       // CORREÇÃO 3: A opção 'requestTrackingAuthorization' foi removida
-      // pois não é reconhecida pela sua versão do plugin, causando o erro.
-      // É uma opção específica para iOS que podemos deixar de fora por enquanto.
-      initializeForTesting: true,
+      initializeForTesting: false,
     });
   }
 }
